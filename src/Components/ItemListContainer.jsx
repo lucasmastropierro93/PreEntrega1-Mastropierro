@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ItemCount from './ItemCount';
 import Propiedades from './Propiedades';
+import SnackbarContent from '@mui/material/SnackbarContent';
 
-const ItemListContainer = () =>{
+
+
+function ItemListContainer ({greeting}) {
+    
     return(
-<Propiedades></Propiedades>
+        <div >
+            <h2>{greeting}</h2>
+        </div>
     );
 }
+
 
 export default ItemListContainer;
